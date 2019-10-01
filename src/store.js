@@ -5,21 +5,37 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    x: 50,
-    y: 50,
+    x: 250,
+    y: 250,
   },
   mutations: {
-    moveTop (state) {
-      state.y += 10
+    moveUp(state) {
+      if (state.y >= 50) {
+        state.y -= 25
+      } else {
+        state.y -= 0
+      }
     },
-    moveDown (state) {
-      state.y -= 10
+    moveDown(state) {
+      if (state.y <= 450) {
+        state.y += 25
+      } else {
+        state.y += 0
+      }
     },
-    moveRight (state) {
-      state.x += 10
+    moveRight(state) {
+      if ( state.x <= 450) {
+        state.x += 25
+      } else {
+        state.x += 0
+      }
     },
-    moveLeft (state) {
-      state.x -= 10
+    moveLeft(state) {
+      if (state.x >= 50) {
+        state.x -= 25
+      } else {
+        state.x -=0
+      }
     },
   }
 })

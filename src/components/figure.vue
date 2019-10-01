@@ -10,7 +10,7 @@
   export default {
     name: 'Figure',
     computed: mapState({
-      style: state => `top: ${state.y}%; left: ${state.x}%;`
+      style: state => `top: ${state.y}px; left: ${state.x}px;`
     })
   }
 
@@ -27,5 +27,6 @@
     background: lavender;
     border: cadetblue 1px solid;
     box-sizing: border-box;
+    transition: all 0.5s;
   }
 </style>

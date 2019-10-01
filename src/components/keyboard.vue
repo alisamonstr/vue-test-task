@@ -1,18 +1,18 @@
 <template>
   <div class="keyboard">
     <div class="row">
-      <div class="button">
+      <div class="button" @click.exact="moveUp" >
         🡹
       </div>
     </div>
     <div class="row">
-      <div class="button">
+      <div class="button" @click.exact="moveLeft">
         🡸
       </div>
-      <div class="button">
+      <div class="button" @click.exact="moveDown">
         🡻
       </div>
-      <div class="button">
+      <div class="button" @click.exact="moveRight">
         🡺
       </div>
 
@@ -21,8 +21,18 @@
 </template>
 
 <script>
+  import {mapMutations} from 'vuex'
+
   export default {
     name: 'Keyboard',
+    methods: {
+      ...mapMutations([
+        'moveUp',
+        'moveDown',
+        'moveRight',
+        'moveLeft',
+      ])
+    }
   }
 </script>
 
@@ -56,5 +66,9 @@
     border: hotpink 1px solid;
     font-size: 20px;
     color: dimgrey;
+    transition: all 0.5s;
+      &:hover {
+        background: lightpink;
+      }
   }
 </style>
