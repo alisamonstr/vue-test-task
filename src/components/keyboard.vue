@@ -2,18 +2,18 @@
   <div class="keyboard">
     <div class="row">
       <div class="button" @click.exact="moveUp" >
-        🡹
+        ↑
       </div>
     </div>
     <div class="row">
       <div class="button" @click.exact="moveLeft">
-        🡸
+        ←
       </div>
       <div class="button" @click.exact="moveDown">
-        🡻
+        ↓
       </div>
       <div class="button" @click.exact="moveRight">
-        🡺
+        →
       </div>
     </div>
   </div>
