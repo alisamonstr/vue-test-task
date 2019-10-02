@@ -1,5 +1,3 @@
-import Figure from './components/figure.vue'
-
 <template>
   <div class="scene">
     <Figure/>
@@ -12,13 +10,9 @@ import Figure from './components/figure.vue'
   export default {
     name: 'Scene',
     components: {Figure},
-    props: {
-      msg: String
-    }
   }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
   .scene {
     width: 500px;

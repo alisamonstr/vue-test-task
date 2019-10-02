@@ -2,7 +2,7 @@
   <div id="app">
     <Scene>
     </Scene>
-    <Keyboard msg="Welcome to Your Vue.js App"/>
+    <Keyboard/>
   </div>
 </template>
 
@@ -20,14 +20,14 @@
   }
 </script>
 
-<style>
+<style scoped lang="scss">
   #app {
+    display: flex;
+    text-align: center;
+    margin-top: 60px;
+    color: #2c3e50;
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-    margin-top: 60px;
-    display: flex;
   }
 </style>
